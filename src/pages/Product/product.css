@@ -1,0 +1,81 @@
+.productpage{
+    padding: 1rem 3rem;
+}
+
+.top-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    text-indent: 50px;
+    gap: 2rem;
+    align-items: center;
+    background-color: #fffe7a;
+    padding: 2rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card{
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15rem;
+}
+
+.top-div:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+  }
+.myToast{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.formscreen{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    height: 100vh;
+}
+
+.form{
+    width: 25rem;
+}
+
+.formcard{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 0 3rem;
+  background-color:aliceblue;
+}
+
+.movieImg{
+    transition: 0.25s ease;
+}
+
+.movieImg:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 640px) {
+    .namerow{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .top-div{
+        flex-direction: column-reverse;
+    }
+    .cardsdiv{
+        justify-content: center !important;
+        gap: 1.5rem !important;
+    }
+    .productpage{
+        padding: 1rem ;
+    }
+    .formcard{
+        width: 100%;
+        margin:initial 1.5rem !important;
+    }
+  }
