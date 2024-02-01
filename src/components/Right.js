@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Dropdown from "./Dropdown";
 import Card from "./Card";
+import "../pages/Home/home.css";
 
 function Right({ handleBurgerClick, moviesList, setFilter, setMoviesList }) {
   const [input, setInput] = useState("");

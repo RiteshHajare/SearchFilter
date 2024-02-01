@@ -68,6 +68,9 @@
     .fa-bars{
         display: block !important;
     }
+    .inputEl{
+        width: 15rem;
+    }
     .right{
         margin-left: 0;
     }
@@ -80,18 +83,28 @@
     }
   }
 @media (max-width: 770px) {
+    .inputEl{
+        width: 15rem !important;
+    }
     .right{
         padding: 1rem;
-        
+        padding-top: 1.5rem;
     }
     .movies{
         justify-content: center;
     }
-    
+    .status{
+        margin-left: 4rem;
+    }
   }
 @media (max-width: 530px) {
+    .inputdiv input{
+        width: 10rem !important;
+    }
     .inputdiv{
         margin-left: 0;
     }
-    
+    .status{
+        margin-left: 1.7rem;
+    }
   }
