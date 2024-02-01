@@ -1,6 +1,6 @@
 import React from "react";
 
-function Radio({ name, setFilter, type, leftRef }) {
+function Radio({ name, setFilter, type, leftRef, setBurgerClicked }) {
   return (
     <div class="form-check">
       <input
@@ -10,7 +10,8 @@ function Radio({ name, setFilter, type, leftRef }) {
         id={`${name}`}
         onChange={(e) => {
           leftRef.current.classList.add("leftmoveout");
-          setFilter((prev) => {
+          setBurgerClicked(false);
+          setFilter(() => {
             return {
               dropdown: "",
               status: "",

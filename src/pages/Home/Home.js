@@ -67,12 +67,16 @@ function Home() {
   }
   return (
     <div className="homepage">
-      <Left setFilter={setFilter} burgerClicked={burgerClicked} />
+      <Left
+        setFilter={setFilter}
+        setBurgerClicked={setBurgerClicked}
+        burgerClicked={burgerClicked}
+      />
       <Right
         setFilter={setFilter}
         moviesList={moviesList}
         handleBurgerClick={handleBurgerClick}
-        setMoviesList={setMoviesList}
+        setBurgerClicked={setBurgerClicked}
       />
     </div>
   );

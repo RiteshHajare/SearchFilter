@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Radio from "./Radio";
 
-function Left({ burgerClicked, setFilter }) {
+function Left({ burgerClicked, setFilter, setBurgerClicked }) {
   const leftRef = useRef(null);
 
   useEffect(() => {
@@ -23,30 +23,35 @@ function Left({ burgerClicked, setFilter }) {
             setFilter={setFilter}
             name={"Scripted"}
             type={"type"}
+            setBurgerClicked={setBurgerClicked}
           />
           <Radio
             leftRef={leftRef}
             setFilter={setFilter}
             name={"Reality"}
             type={"type"}
+            setBurgerClicked={setBurgerClicked}
           />
           <Radio
             leftRef={leftRef}
             setFilter={setFilter}
             name={"Variety"}
             type={"type"}
+            setBurgerClicked={setBurgerClicked}
           />
           <Radio
             leftRef={leftRef}
             setFilter={setFilter}
             name={"Talk Show"}
             type={"type"}
+            setBurgerClicked={setBurgerClicked}
           />
           <Radio
             leftRef={leftRef}
             setFilter={setFilter}
             name={"Documentary"}
             type={"type"}
+            setBurgerClicked={setBurgerClicked}
           />
         </div>
       </div>
@@ -58,18 +63,21 @@ function Left({ burgerClicked, setFilter }) {
             setFilter={setFilter}
             name={"English"}
             type={"language"}
+            setBurgerClicked={setBurgerClicked}
           />
           <Radio
             leftRef={leftRef}
             setFilter={setFilter}
             name={"Korean"}
             type={"language"}
+            setBurgerClicked={setBurgerClicked}
           />
           <Radio
             leftRef={leftRef}
             setFilter={setFilter}
             name={"Japanese"}
             type={"language"}
+            setBurgerClicked={setBurgerClicked}
           />
         </div>
       </div>

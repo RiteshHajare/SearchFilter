@@ -3,13 +3,19 @@ import Dropdown from "./Dropdown";
 import Card from "./Card";
 import "../pages/Home/home.css";
 
-function Right({ handleBurgerClick, moviesList, setFilter, setMoviesList }) {
+function Right({ handleBurgerClick, moviesList, setFilter, setBurgerClicked }) {
   const [input, setInput] = useState("");
 
   return (
-    <div className="right">
+    <div className="right" onClick={() => setBurgerClicked(false)}>
       <div className="inputdiv d-flex">
-        <i className="fa-solid fa-bars fs-2" onClick={handleBurgerClick}></i>
+        <i
+          className="fa-solid fa-bars fs-2"
+          onClick={(e) => {
+            e.stopPropagation();
+            handleBurgerClick();
+          }}
+        ></i>
         <Dropdown handleClick={setFilter} />
         <input
           value={input}
